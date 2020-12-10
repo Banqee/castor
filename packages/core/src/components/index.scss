@@ -1,5 +1,7 @@
 @use './button/button';
 @forward './button/button';
+@use './checkbox/checkbox';
+@forward './checkbox/checkbox';
 @use './icon/icon';
 @forward './icon/icon';
 @use './input/input';
@@ -9,6 +11,7 @@
 
 @mixin components() {
   @include button.Button();
+  @include checkbox.Checkbox();
   @include icon.Icon();
   @include input.Input();
   @include textarea.Textarea();
